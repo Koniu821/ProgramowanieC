@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+int t,n,c,d,e,a;
+int main()
+{
+   cin>>t;
+   for(int c=1; c<=t; c++)
+   {
+   cin>>n;
+   d=0;
+   for(a=1; a<=n; a++)
+   {
+       cin>>e;
+       d=d+e;
+   }
+   cout<<d<<"\n";
+   }
+    return 0;
+}
