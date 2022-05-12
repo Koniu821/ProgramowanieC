@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+int d,w;
+int main()
+{
+
+    cin>>d;
+    for(int i=0; i<d; i++)
+    {
+        cin>>w;
+        cout<<w*w<<endl;
+
+    }
+
+
+
+    return 0;
+}
+
