@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+    int table[101];
+    int t, i, q;
+    cin>>t;
+    while(t--)
+    {
+        cin>>q;
+        for(i=1; i<=q; ++i)
+        {
+            cin>>table[i];
+        }
+        for(i=1; i<=q; ++i)
+        {
+            if(i%2==0)
+            {
+                cout<<table[i]<<" ";
+            }
+        }
+        for(i=1; i<=q; ++i)
+        {
+            if(i%2!=0)
+            {
+                cout<<table[i]<<" ";
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}
