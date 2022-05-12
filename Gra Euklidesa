@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+int michal;
+int rafal;
+int dupa;
+int t;
+
+int main()
+{
+    cin>>t;
+    for (int i=0; i<t; i++)
+    {
+        cin>>michal>>rafal;
+
+        if (michal < rafal || michal > rafal)
+        {
+            do
+            {
+                if (michal < rafal)
+                    {
+                        rafal = rafal - michal;
+                    }
+                else if (michal > rafal)
+                    {
+                        michal = michal - rafal;
+                    }
+            }
+            while (michal < rafal || michal > rafal);
+
+            dupa = michal + rafal;
+            cout<<dupa<<endl;
+        }
+        else
+        {
+            dupa = michal + rafal;
+            cout<<dupa<<endl;
+        }
+    }
+
+    return 0;
+}
